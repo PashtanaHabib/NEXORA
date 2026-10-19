@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | NEXORA</title>
+    <meta
+      name="description"
+      content="Selected projects across web, UI/UX, mobile and branding."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⬢</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-nx">
+      <div class="container-nx">
+        <a class="navbar-brand" href="index.html">NEX<span>ORA</span></a>
+        <button
+          class="navbar-toggler border-0 text-white"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navOffcanvas"
+          aria-label="Toggle menu"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a
+            href="contact.html"
+            class="btn btn-nx-primary d-none d-lg-inline-block"
+            >Start a Project</a
+          >
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-end offcanvas-nx d-lg-none"
+        tabindex="-1"
+        id="navOffcanvas"
+      >
+        <div class="offcanvas-header">
+          <span class="navbar-brand mb-0">NEX<span>ORA</span></span>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active d-block py-2" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-nx-primary w-100 mt-3"
+            >Start a Project</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="section bg-grid"
+      style="padding-top: 170px; position: relative; overflow: hidden"
+    >
+      <div class="container-nx position-relative" style="z-index: 1">
+        <nav class="breadcrumb-nx mb-4">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Portfolio</li>
+          </ol>
+        </nav>
+        <div class="eyebrow-label hero-fade-1">Selected work</div>
+        <h1
+          class="hero-fade-2"
+          style="font-size: clamp(2.2rem, 4.5vw, 3.2rem); max-width: 16ch"
+        >
+          Nine projects, four disciplines.
+        </h1>
+        <p class="hero-fade-3 fs-5 mt-3" style="max-width: 60ch">
+          Filter by discipline below, or open any project for the full brief.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container-nx">
+        <ul
+          class="nav nav-tabs nav-tabs-nx mb-5"
+          id="portfolioTabs"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#pf-all"
+              type="button"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#pf-web"
+              type="button"
+            >
+              Web Design
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#pf-uiux"
+              type="button"
+            >
+              UI / UX
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#pf-mobile"
+              type="button"
+            >
+              Mobile
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#pf-brand"
+              type="button"
+            >
+              Branding
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pf-all">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  <img
+                    src="images/project-aurora-health.svg"
+                    alt="Aurora Health project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Aurora Health</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  <img
+                    src="images/project-fenwick-capital.svg"
+                    alt="Fenwick Capital project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Fenwick Capital</h6>
+                      <span class="small text-white-50">UI / UX</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3"
+                >
+                  <img
+                    src="images/project-loop-mobility.svg"
+                    alt="Loop Mobility project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Loop Mobility</h6>
+                      <span class="small text-white-50">Mobile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal4"
+                >
+                  <img
+                    src="images/project-solace-bank.svg"
+                    alt="Solace Bank project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Solace Bank</h6>
+                      <span class="small text-white-50">Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal5"
+                >
+                  <img
+                    src="images/project-northwind-logistics.svg"
+                    alt="Northwind Logistics project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Northwind Logistics</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal6"
+                >
+                  <img
+                    src="images/project-pulse-fitness.svg"
+                    alt="Pulse Fitness project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Pulse Fitness</h6>
+                      <span class="small text-white-50">Mobile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal7"
+                >
+                  <img
+                    src="images/project-ember-studio.svg"
+                    alt="Ember Studio project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Ember Studio</h6>
+                      <span class="small text-white-50">Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal8"
+                >
+                  <img
+                    src="images/project-kite-analytics.svg"
+                    alt="Kite Analytics project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Kite Analytics</h6>
+                      <span class="small text-white-50">UI / UX</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal9"
+                >
+                  <img
+                    src="images/project-harbor-real-estate.svg"
+                    alt="Harbor Real Estate project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Harbor Real Estate</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pf-web">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  <img
+                    src="images/project-aurora-health.svg"
+                    alt="Aurora Health project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Aurora Health</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal5"
+                >
+                  <img
+                    src="images/project-northwind-logistics.svg"
+                    alt="Northwind Logistics project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Northwind Logistics</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal9"
+                >
+                  <img
+                    src="images/project-harbor-real-estate.svg"
+                    alt="Harbor Real Estate project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Harbor Real Estate</h6>
+                      <span class="small text-white-50">Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pf-uiux">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  <img
+                    src="images/project-fenwick-capital.svg"
+                    alt="Fenwick Capital project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Fenwick Capital</h6>
+                      <span class="small text-white-50">UI / UX</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal8"
+                >
+                  <img
+                    src="images/project-kite-analytics.svg"
+                    alt="Kite Analytics project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Kite Analytics</h6>
+                      <span class="small text-white-50">UI / UX</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pf-mobile">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3"
+                >
+                  <img
+                    src="images/project-loop-mobility.svg"
+                    alt="Loop Mobility project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Loop Mobility</h6>
+                      <span class="small text-white-50">Mobile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal6"
+                >
+                  <img
+                    src="images/project-pulse-fitness.svg"
+                    alt="Pulse Fitness project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Pulse Fitness</h6>
+                      <span class="small text-white-50">Mobile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pf-brand">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal4"
+                >
+                  <img
+                    src="images/project-solace-bank.svg"
+                    alt="Solace Bank project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Solace Bank</h6>
+                      <span class="small text-white-50">Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 portfolio-item">
+                <div
+                  class="portfolio-thumb"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal7"
+                >
+                  <img
+                    src="images/project-ember-studio.svg"
+                    alt="Ember Studio project preview"
+                    loading="lazy"
+                  />
+                  <div class="overlay">
+                    <div>
+                      <h6 class="mb-1">Ember Studio</h6>
+                      <span class="small text-white-50">Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade modal-nx" id="modal1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Aurora Health</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-aurora-health.svg"
+                alt="Aurora Health project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Web Design</span>
+            <p>
+              A full patient-portal rebuild cutting booking time from 6 minutes
+              to 90 seconds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Fenwick Capital</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-fenwick-capital.svg"
+                alt="Fenwick Capital project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">UI / UX</span>
+            <p>Real-time trading dashboard redesigned for a 40-person desk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Loop Mobility</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-loop-mobility.svg"
+                alt="Loop Mobility project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Mobile</span>
+            <p>
+              Rider app relaunch driving a 3.2x increase in weekly active
+              riders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal4" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Solace Bank</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-solace-bank.svg"
+                alt="Solace Bank project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Branding</span>
+            <p>
+              Full brand refresh across web, app and print for a digital-first
+              bank.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal5" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Northwind Logistics</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-northwind-logistics.svg"
+                alt="Northwind Logistics project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Web Design</span>
+            <p>Fleet tracking dashboard replacing three legacy spreadsheets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal6" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Pulse Fitness</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-pulse-fitness.svg"
+                alt="Pulse Fitness project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Mobile</span>
+            <p>Workout tracking app with social streaks and coach messaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal7" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Ember Studio</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-ember-studio.svg"
+                alt="Ember Studio project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Branding</span>
+            <p>Identity system for a boutique animation studio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal8" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Kite Analytics</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-kite-analytics.svg"
+                alt="Kite Analytics project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">UI / UX</span>
+            <p>Self-serve reporting builder used by 200+ marketing teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-nx" id="modal9" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Harbor Real Estate</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio-thumb mb-3">
+              <img
+                src="images/project-harbor-real-estate.svg"
+                alt="Harbor Real Estate project preview"
+                loading="lazy"
+              />
+            </div>
+            <span class="badge-nx mb-3 d-inline-block">Web Design</span>
+            <p>Listings platform with saved-search alerts and agent CRM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-sm">
+      <div class="container-nx">
+        <div
+          class="cta-panel d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4"
+        >
+          <div>
+            <h2 class="mb-2">Like what you see?</h2>
+            <p class="mb-0">Let's scope your project the same way.</p>
+          </div>
+          <a href="contact.html" class="btn btn-nx-primary btn-lg flex-shrink-0"
+            >Start a project</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer-nx">
+      <div class="container-nx">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4">
+            <a class="navbar-brand d-inline-block mb-3" href="index.html"
+              >NEX<span>ORA</span></a
+            >
+            <p class="mb-4">
+              A digital studio building interfaces, products and brand systems
+              for teams shipping what's next.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="social-dot"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Studio</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Services</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="services.html">Web Development</a></li>
+              <li><a href="services.html">UI / UX Design</a></li>
+              <li><a href="services.html">Cloud Solutions</a></li>
+              <li><a href="services.html">AI Solutions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6>Stay in the loop</h6>
+            <p class="mb-3">
+              Product notes and studio updates, once a month, no fluff.
+            </p>
+            <form class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control form-control-nx"
+                placeholder="you@company.com"
+                aria-label="Email address"
+              />
+              <button class="btn btn-nx-primary flex-shrink-0" type="submit">
+                Join
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr class="hr-nx" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-4"
+        >
+          <p class="mb-0 small">© 2026 Nexora Studio. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="small">Privacy</a>
+            <a href="#" class="small">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | NEXORA</title>
+    <meta
+      name="description"
+      content="Notes on design, engineering and running a studio."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⬢</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-nx">
+      <div class="container-nx">
+        <a class="navbar-brand" href="index.html">NEX<span>ORA</span></a>
+        <button
+          class="navbar-toggler border-0 text-white"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navOffcanvas"
+          aria-label="Toggle menu"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a
+            href="contact.html"
+            class="btn btn-nx-primary d-none d-lg-inline-block"
+            >Start a Project</a
+          >
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-end offcanvas-nx d-lg-none"
+        tabindex="-1"
+        id="navOffcanvas"
+      >
+        <div class="offcanvas-header">
+          <span class="navbar-brand mb-0">NEX<span>ORA</span></span>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active d-block py-2" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block py-2" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-nx-primary w-100 mt-3"
+            >Start a Project</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="section bg-grid"
+      style="padding-top: 170px; position: relative; overflow: hidden"
+    >
+      <div class="container-nx position-relative" style="z-index: 1">
+        <nav class="breadcrumb-nx mb-4">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Blog</li>
+          </ol>
+        </nav>
+        <div class="eyebrow-label hero-fade-1">Notes from the studio</div>
+        <h1
+          class="hero-fade-2"
+          style="font-size: clamp(2.2rem, 4.5vw, 3.2rem); max-width: 16ch"
+        >
+          Writing on design, code and running a studio.
+        </h1>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container-nx">
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-web-design.svg"
+                  alt="Web design 2026"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Design</span><span>Mar 12, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >The Future of Web Design in 2026</a
+                  >
+                </h5>
+                <p class="small">
+                  Interfaces are getting quieter, faster and more personal —
+                  here's what's driving it.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-responsive.svg"
+                  alt="Responsive design on several screens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Development</span
+                  ><span>Mar 3, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >Why Responsive Design Still Matters</a
+                  >
+                </h5>
+                <p class="small">
+                  Screen sizes keep multiplying. A single fixed layout was never
+                  the answer.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-ux-principles.svg"
+                  alt="UX principles wireframe"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Design</span><span>Feb 21, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >UI/UX Design Principles Worth Repeating</a
+                  >
+                </h5>
+                <p class="small">
+                  The fundamentals founders skip when a deadline gets close.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-cyber-security.svg"
+                  alt="Cyber security shield"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Security</span><span>Feb 9, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >A Practical Guide to Cyber Security Basics</a
+                  >
+                </h5>
+                <p class="small">
+                  Where small teams should actually spend their limited security
+                  budget.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-cloud-costs.svg"
+                  alt="Cloud computing costs"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Cloud</span><span>Jan 28, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >Cloud Computing Costs, Explained</a
+                  >
+                </h5>
+                <p class="small">
+                  Reading a cloud bill shouldn't require a finance degree.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 blog-card">
+            <div
+              class="glass h-100"
+              style="border-radius: 20px; overflow: hidden"
+            >
+              <div class="blog-thumb">
+                <img
+                  src="images/blog-web-tech.svg"
+                  alt="Modern web technologies"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-4">
+                <div
+                  class="d-flex align-items-center gap-2 small text-white-50 mb-2"
+                >
+                  <span class="badge-nx">Development</span
+                  ><span>Jan 14, 2026</span>
+                </div>
+                <h5>
+                  <a href="blog-details.html" style="color: var(--text)"
+                    >Modern Web Technologies We're Watching</a
+                  >
+                </h5>
+                <p class="small">
+                  The frameworks and tools earning a place in our 2026 stack.
+                </p>
+                <a
+                  href="blog-details.html"
+                  class="small"
+                  style="color: var(--accent-1)"
+                  >Read article</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Blog pagination">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link page-link-nx" href="#">Prev</a>
+            </li>
+            <li class="page-item active">
+              <span class="page-link page-link-nx">1</span>
+            </li>
+            <li class="page-item">
+              <a class="page-link page-link-nx" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link page-link-nx" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link page-link-nx" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <footer class="footer-nx">
+      <div class="container-nx">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4">
+            <a class="navbar-brand d-inline-block mb-3" href="index.html"
+              >NEX<span>ORA</span></a
+            >
+            <p class="mb-4">
+              A digital studio building interfaces, products and brand systems
+              for teams shipping what's next.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="social-dot"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-dot"><i class="bi bi-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Studio</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Services</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li><a href="services.html">Web Development</a></li>
+              <li><a href="services.html">UI / UX Design</a></li>
+              <li><a href="services.html">Cloud Solutions</a></li>
+              <li><a href="services.html">AI Solutions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6>Stay in the loop</h6>
+            <p class="mb-3">
+              Product notes and studio updates, once a month, no fluff.
+            </p>
+            <form class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control form-control-nx"
+                placeholder="you@company.com"
+                aria-label="Email address"
+              />
+              <button class="btn btn-nx-primary flex-shrink-0" type="submit">
+                Join
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr class="hr-nx" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-4"
+        >
+          <p class="mb-0 small">© 2026 Nexora Studio. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="small">Privacy</a>
+            <a href="#" class="small">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
